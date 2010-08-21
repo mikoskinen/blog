@@ -8,7 +8,7 @@ namespace app_with_plugin_support
         {
             Scan( x=>
                       {
-                          x.AssembliesFromPathDynamically(@".\plugins");
+                          x.AssembliesFromPath(@".\plugins", null, true);
                           x.AddAllTypesOf<IPlugin>();
                       });
         }
