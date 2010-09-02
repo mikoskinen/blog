@@ -6,6 +6,6 @@ _ReSharper.*
 *.ReSharper.user
 *.resharper
 *.ReSharper
-*.suo
 *.cache
 ~$*
+*.suo
