@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "change-reference-based-on-build-configuration", "change-reference-based-on-build-configuration.csproj", "{EDA35CB8-2FE4-4BD5-A141-3FA9DB937DE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		WithV1.0|x86 = WithV1.0|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDA35CB8-2FE4-4BD5-A141-3FA9DB937DE8}.Debug|x86.ActiveCfg = Debug|x86
+		{EDA35CB8-2FE4-4BD5-A141-3FA9DB937DE8}.Debug|x86.Build.0 = Debug|x86
+		{EDA35CB8-2FE4-4BD5-A141-3FA9DB937DE8}.Release|x86.ActiveCfg = Release|x86
+		{EDA35CB8-2FE4-4BD5-A141-3FA9DB937DE8}.Release|x86.Build.0 = Release|x86
+		{EDA35CB8-2FE4-4BD5-A141-3FA9DB937DE8}.WithV1.0|x86.ActiveCfg = WithV1.0|x86
+		{EDA35CB8-2FE4-4BD5-A141-3FA9DB937DE8}.WithV1.0|x86.Build.0 = WithV1.0|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
