@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryCalc", "SalaryCalc\SalaryCalc.csproj", "{1B5138E3-4B7B-4772-B7D1-17BE3EE12B7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryCalc.Tests", "SalaryCalc.Tests\SalaryCalc.Tests.csproj", "{D8B10BBD-3EAF-44A2-8F46-9928E2361423}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{172DE360-9F6C-4BF4-92C9-72C082A9576F}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		SalaryCalc.vsmdi = SalaryCalc.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SalaryCalc.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B5138E3-4B7B-4772-B7D1-17BE3EE12B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5138E3-4B7B-4772-B7D1-17BE3EE12B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5138E3-4B7B-4772-B7D1-17BE3EE12B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5138E3-4B7B-4772-B7D1-17BE3EE12B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B10BBD-3EAF-44A2-8F46-9928E2361423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B10BBD-3EAF-44A2-8F46-9928E2361423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B10BBD-3EAF-44A2-8F46-9928E2361423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B10BBD-3EAF-44A2-8F46-9928E2361423}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
