@@ -2,16 +2,18 @@
 
 namespace caliburn_micro_datatemplate_selector
 {
-    public class MyBootstrapper : Bootstrapper
+    public class MyBootstrapper : PhoneBootstrapper
     {
-        private SimpleContainer container;
+        private PhoneContainer container;
         protected override void Configure()
         {
-            container = new SimpleContainer();
+            container = new PhoneContainer(RootFrame);
+            container.RegisterPhoneServices();
 
             container.PerRequest<MainPageViewModel>();
 
-            Caliburn.Micro.ViewLocator.NameTransformer.AddRule("");
+            ViewLocator.NameTransformer.AddRule(typeof(File).FullName, typeof(FileView).FullName);
+            ViewLocator.NameTransformer.AddRule(typeof (Folder).FullName, typeof (FolderView).FullName);
         }
 
         protected override object GetInstance(System.Type service, string key)
