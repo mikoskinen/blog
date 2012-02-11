@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSubject", "TestSubject\TestSubject.csproj", "{E662CD84-A7E1-41B6-A9D8-E948A3DC9130}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsAndCustomResolverOverride", "TestsAndCustomResolverOverride\TestsAndCustomResolverOverride.csproj", "{5113FB7A-BAFE-474E-BCC0-033AB4CAA26B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E662CD84-A7E1-41B6-A9D8-E948A3DC9130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E662CD84-A7E1-41B6-A9D8-E948A3DC9130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E662CD84-A7E1-41B6-A9D8-E948A3DC9130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E662CD84-A7E1-41B6-A9D8-E948A3DC9130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5113FB7A-BAFE-474E-BCC0-033AB4CAA26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5113FB7A-BAFE-474E-BCC0-033AB4CAA26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5113FB7A-BAFE-474E-BCC0-033AB4CAA26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5113FB7A-BAFE-474E-BCC0-033AB4CAA26B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal
