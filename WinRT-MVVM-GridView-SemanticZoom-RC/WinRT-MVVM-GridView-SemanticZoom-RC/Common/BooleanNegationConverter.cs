@@ -1,7 +1,7 @@
 ﻿using System;
 using Windows.UI.Xaml.Data;
 
-namespace WinRT_MVVM_GridView_SemanticZoom.Common
+namespace WinRT_MVVM_GridView_SemanticZoom_RC.Common
 {
     /// <summary>
     /// Value converter that translates true to false and vice versa.

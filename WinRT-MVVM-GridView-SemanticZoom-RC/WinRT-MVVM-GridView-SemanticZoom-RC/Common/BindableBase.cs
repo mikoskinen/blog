@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Windows.UI.Xaml.Data;
 
-namespace WinRT_MVVM_GridView_SemanticZoom.Common
+namespace WinRT_MVVM_GridView_SemanticZoom_RC.Common
 {
     /// <summary>
     /// Implementation of <see cref="INotifyPropertyChanged"/> to simplify models.

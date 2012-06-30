@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace WinRT_MVVM_GridView_SemanticZoom
+namespace WinRT_MVVM_GridView_SemanticZoom_RC
 {
     public class MoviesPageViewModel
     {

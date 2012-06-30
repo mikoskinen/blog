@@ -1,8 +1,9 @@
 ﻿<Application
-    x:Class="WinRT_MVVM_GridView_SemanticZoom.App"
+    x:Class="WinRT_MVVM_GridView_SemanticZoom_RC.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:WinRT_MVVM_GridView_SemanticZoom">
+    xmlns:local="using:WinRT_MVVM_GridView_SemanticZoom_RC"
+    xmlns:localData="using:WinRT_MVVM_GridView_SemanticZoom_RC.Data">
 
     <Application.Resources>
         <ResourceDictionary>
@@ -15,6 +16,9 @@
                 <ResourceDictionary Source="Common/StandardStyles.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
+            <!-- Application-specific resources -->
+
+            <x:String x:Key="AppName">WinRT-MVVM-GridView-SemanticZoom-RC</x:String>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

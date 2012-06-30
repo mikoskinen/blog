@@ -1,20 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
 
-  <Identity Name="cd79f39b-09d1-4de0-9246-d82178f6c866"
+  <Identity Name="6266fc25-87a3-417e-b9e8-722ed01d446d"
             Publisher="CN=Mikael"
             Version="1.0.0.0" />
 
   <Properties>
-    <DisplayName>WinRT-MVVM-GridView-SemanticZoom</DisplayName>
+    <DisplayName>WinRT-MVVM-GridView-SemanticZoom-RC</DisplayName>
     <PublisherDisplayName>Mikael</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
-    <Description>WinRT-MVVM-GridView-SemanticZoom</Description>
   </Properties>
 
   <Prerequisites>
-    <OSMinVersion>6.2</OSMinVersion>
-    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+    <OSMinVersion>6.2.0</OSMinVersion>
+    <OSMaxVersionTested>6.2.0</OSMaxVersionTested>
   </Prerequisites>
 
   <Resources>
@@ -24,14 +23,14 @@
   <Applications>
     <Application Id="App"
         Executable="$targetnametoken$.exe"
-        EntryPoint="WinRT_MVVM_GridView_SemanticZoom.App">
+        EntryPoint="WinRT_MVVM_GridView_SemanticZoom_RC.App">
         <VisualElements
-            DisplayName="WinRT-MVVM-GridView-SemanticZoom"
+            DisplayName="WinRT-MVVM-GridView-SemanticZoom-RC"
             Logo="Assets\Logo.png"
             SmallLogo="Assets\SmallLogo.png"
-            Description="WinRT-MVVM-GridView-SemanticZoom"
+            Description="WinRT-MVVM-GridView-SemanticZoom-RC"
             ForegroundText="light"
-            BackgroundColor="#222222">
+            BackgroundColor="#464646">
             <DefaultTile ShowName="allLogos" />
             <SplashScreen Image="Assets\SplashScreen.png" />
         </VisualElements>
