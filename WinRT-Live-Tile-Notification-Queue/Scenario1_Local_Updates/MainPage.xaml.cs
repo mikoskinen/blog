@@ -45,7 +45,7 @@ namespace WinRT_Live_Tile_Notification_Queue
                 var tilesSubtitle = DateTime.UtcNow.AddHours(i);
                 var myTile = Generator.Generate(tileTitle, tilesSubtitle);
 
-                var notification = new TileNotification(myTile.ToXmlDoc()) { ExpirationTime = tilesSubtitle.AddMinutes(15) };
+                var notification = new TileNotification(myTile.ToXmlDoc()) { ExpirationTime = tilesSubtitle.AddMinutes(15), Tag = i.ToString()};
 
                 TileUpdateManager.CreateTileUpdaterForApplication().Update(notification);
             }
