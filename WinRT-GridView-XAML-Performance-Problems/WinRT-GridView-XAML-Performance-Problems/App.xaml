@@ -1,0 +1,35 @@
+﻿<Application
+    x:Class="WinRT_GridView_XAML_Performance_Problems.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Common/StandardStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate x:Key="MovieTemplate">
+                <Grid HorizontalAlignment="Left" Width="250" Height="250">
+                    <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}">
+                        <Image Source="{Binding Cover}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
+                    </Border>
+                    <StackPanel VerticalAlignment="Bottom" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
+                        <TextBlock Text="{Binding Title}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Style="{StaticResource TitleTextStyle}" Height="60" Margin="15,0,15,0"/>
+                        <TextBlock Text="{Binding Year}" Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}" Style="{StaticResource CaptionTextStyle}" TextWrapping="NoWrap" Margin="15,0,15,10"/>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="MovieCategoryTemplate">
+                <Grid HorizontalAlignment="Left" Width="250" Height="250">
+                    <StackPanel VerticalAlignment="Bottom" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
+                        <TextBlock Text="{Binding}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Style="{StaticResource TitleTextStyle}" Height="60" Margin="15,0,15,0"/>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+
+            <x:String x:Key="AppName">WinRT GridView Performance Problems</x:String>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
