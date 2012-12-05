@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using Caliburn.Micro;
+using Windows.ApplicationModel.Activation;
 
 namespace caliburn_micro_winrt_getting_started
 {
-    sealed partial class App : Caliburn.Micro.CaliburnApplication
+    sealed partial class App
     {
         private WinRTContainer container;
 
@@ -15,9 +16,7 @@ namespace caliburn_micro_winrt_getting_started
 
         protected override void Configure()
         {
-            base.Configure();
-
-            container = new WinRTContainer(RootFrame);
+            container = new WinRTContainer();
             container.RegisterWinRTServices();
         }
 
@@ -36,9 +35,14 @@ namespace caliburn_micro_winrt_getting_started
             container.BuildUp(instance);
         }
 
-        protected override Type GetDefaultView()
+        protected override void PrepareViewFirst(Windows.UI.Xaml.Controls.Frame rootFrame)
         {
-            return typeof(MainPage);
+            container.RegisterNavigationService(rootFrame); 
+        }
+
+        protected override void OnLaunched(LaunchActivatedEventArgs args)
+        {
+            DisplayRootView<MainPage>();
         }
     }
 }

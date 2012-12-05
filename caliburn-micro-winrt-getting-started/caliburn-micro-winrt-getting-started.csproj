@@ -100,21 +100,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <ProjectReference Include="lib\caliburn.micro\Caliburn.Micro.WinRT.Extensions\Caliburn.Micro.WinRT.Extensions.csproj">
-      <Project>{e5718a59-1466-4b36-ba76-f596f550b19b}</Project>
-      <Name>Caliburn.Micro.WinRT.Extensions</Name>
-    </ProjectReference>
-    <ProjectReference Include="lib\caliburn.micro\Caliburn.Micro.WinRT\Caliburn.Micro.WinRT.csproj">
-      <Project>{fdbdc52d-6a55-4531-9899-a5dcb0e09f15}</Project>
-      <Name>Caliburn.Micro.WinRT</Name>
-    </ProjectReference>
-    <ProjectReference Include="lib\caliburn.micro\Windows.UI.Interactivity\Windows.UI.Interactivity.csproj">
-      <Project>{7007121c-6efa-4889-a9ea-a9bc521ca1cb}</Project>
-      <Name>Windows.UI.Interactivity</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -129,6 +114,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="caliburn-micro-winrt-getting-started_TemporaryKey.pfx" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Logo.png" />
@@ -149,6 +135,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Caliburn.Micro, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Caliburn.Micro.1.4\lib\win8\Caliburn.Micro.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Micro.Extensions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Caliburn.Micro.1.4\lib\win8\Caliburn.Micro.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows.UI.Interactivity, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Windows.UI.Interactivity.1.0.2.0\lib\winrt45\Windows.UI.Interactivity.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
