@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+
+  <Identity Name="3150ab06-ea38-4431-8fb5-fa41d0c5e7be"
+            Publisher="CN=Mikael"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>hubcontrol-getting-started</DisplayName>
+    <PublisherDisplayName>Mikael</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="hubcontrol_getting_started.App">
+        <m2:VisualElements
+            DisplayName="hubcontrol-getting-started"
+            Square150x150Logo="Assets\Logo.png"
+            Square30x30Logo="Assets\SmallLogo.png"
+            Description="hubcontrol-getting-started"
+            ForegroundText="light"
+            BackgroundColor="#464646">
+            <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

@@ -1,0 +1,48 @@
+﻿<Application
+    x:Class="hubcontrol_getting_started.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:hubcontrol_getting_started">
+
+    <Application.Resources>
+
+        <LinearGradientBrush x:Key="BackgroundBrush" 
+                             EndPoint="2,2" 
+                             StartPoint="6,6" 
+                             SpreadMethod="Repeat" 
+                             MappingMode="Absolute" Opacity="0.26">
+            <GradientStop Color="Blue" Offset="0"/>
+            <GradientStop Color="#50C4FE" Offset="0.1"/>
+        </LinearGradientBrush>
+        
+        <DataTemplate x:Key="Standard130ItemTemplate">
+            <Grid Height="110" Margin="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}" Width="110" Height="110">
+                    <Image Source="{Binding Image}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
+                </Border>
+                <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
+                    <TextBlock Text="{Binding Title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="NoWrap"/>
+                    <TextBlock Text="{Binding Subtitle}" Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="NoWrap"/>
+                    <TextBlock Text="{Binding Description}" Style="{StaticResource BodyTextBlockStyle}" MaxHeight="60" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="Standard250x250ItemTemplate">
+            <Grid HorizontalAlignment="Left" Width="250" Height="250">
+                <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}">
+                    <Image Source="{Binding Image}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
+                </Border>
+                <StackPanel VerticalAlignment="Bottom" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
+                    <TextBlock Text="{Binding Title}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Style="{StaticResource TitleTextBlockStyle}" Height="60" Margin="15,0,15,0"/>
+                    <TextBlock Text="{Binding Subtitle}" Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}" Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="NoWrap" Margin="15,0,15,10"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+        
+    </Application.Resources>
+</Application>
