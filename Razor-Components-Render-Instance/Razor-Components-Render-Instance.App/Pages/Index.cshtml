@@ -1,0 +1,48 @@
+﻿@using System.Reflection;
+@page "/"
+
+<h1>Render component instance</h1>
+
+<h3>Reference capture</h3>
+@DrawCounter()
+
+<h3>Reflection</h3>
+@RenderContent(_counterInstance)
+
+@functions{
+
+    private Counter _myCounter = null;
+    private Counter _counterInstance = new Counter();
+
+    RenderFragment DrawCounter()
+    {
+        return new RenderFragment(builder =>
+        {
+            builder.OpenComponent<Counter>(0);
+            builder.AddComponentReferenceCapture(1, inst => { _myCounter = (Counter)inst; });
+            builder.CloseComponent();
+        });
+    }
+
+    RenderFragment RenderContent(ComponentBase instance)
+    {
+        var fragmentField = GetPrivateField(instance.GetType(), "_renderFragment");
+
+        var value = (RenderFragment)fragmentField.GetValue(instance);
+
+        return value;
+    }
+
+    //https://stackoverflow.com/a/48551735/66988
+    private static FieldInfo GetPrivateField(Type t, String name)
+    {
+        const BindingFlags bf = BindingFlags.Instance |
+                                BindingFlags.NonPublic |
+                                BindingFlags.DeclaredOnly;
+
+        FieldInfo fi;
+        while ((fi = t.GetField(name, bf)) == null && (t = t.BaseType) != null) ;
+
+        return fi;
+    }
+}

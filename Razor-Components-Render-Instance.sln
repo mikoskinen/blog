@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28531.58
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor-Components-Render-Instance.Server", "Razor-Components-Render-Instance\Razor-Components-Render-Instance.Server\Razor-Components-Render-Instance.Server.csproj", "{A0943B93-687B-4F16-8731-DAAEABB3BA20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor-Components-Render-Instance.App", "Razor-Components-Render-Instance\Razor-Components-Render-Instance.App\Razor-Components-Render-Instance.App.csproj", "{13B39EF0-6583-4AF0-96E2-115FA8D3C567}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0943B93-687B-4F16-8731-DAAEABB3BA20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0943B93-687B-4F16-8731-DAAEABB3BA20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0943B93-687B-4F16-8731-DAAEABB3BA20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0943B93-687B-4F16-8731-DAAEABB3BA20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13B39EF0-6583-4AF0-96E2-115FA8D3C567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B39EF0-6583-4AF0-96E2-115FA8D3C567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B39EF0-6583-4AF0-96E2-115FA8D3C567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B39EF0-6583-4AF0-96E2-115FA8D3C567}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D4FC1AC-8B14-4456-BD23-9BDA3BB96AD0}
+	EndGlobalSection
+EndGlobal
