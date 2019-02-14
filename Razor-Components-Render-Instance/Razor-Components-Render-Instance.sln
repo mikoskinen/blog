@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28531.58
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor-Components-Render-Instance.Server", "Razor-Components-Render-Instance\Razor-Components-Render-Instance.Server\Razor-Components-Render-Instance.Server.csproj", "{A0943B93-687B-4F16-8731-DAAEABB3BA20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor-Components-Render-Instance.Server", "Razor-Components-Render-Instance.Server\Razor-Components-Render-Instance.Server.csproj", "{A0943B93-687B-4F16-8731-DAAEABB3BA20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor-Components-Render-Instance.App", "Razor-Components-Render-Instance\Razor-Components-Render-Instance.App\Razor-Components-Render-Instance.App.csproj", "{13B39EF0-6583-4AF0-96E2-115FA8D3C567}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor-Components-Render-Instance.App", "Razor-Components-Render-Instance.App\Razor-Components-Render-Instance.App.csproj", "{13B39EF0-6583-4AF0-96E2-115FA8D3C567}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
